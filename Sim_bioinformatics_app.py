@@ -14,7 +14,7 @@ st.header("Enter DNA sequence")
 
 sequence_input = "DNA Query \nGAACACGTGGAGGCAAACAGGAAGGTGAAGAAGAACTTATCCTATCAGGACGGAAGGTCCTGTGCTCGGG\nATCTTCCAGACGTCGCGACTCTAAATTGCCCCCTCTGAGGTCAAGGAACACAAGATGGTTTTGGAAATGC\nTGAACCCGATACATTATAACATCACCAGCATCGTGCCTGAAGCCATGCCTGCTGCCACCATGCCAGTCCT"
 
-sequence = st.text_area("Sequence input", sequence_input, height= 125)
+sequence = st.text_area("Sequence input", sequence_input, height= 125).upper()
 sequence = sequence.splitlines()
 sequence = "".join(sequence[1:])
 
